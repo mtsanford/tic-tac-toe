@@ -1,0 +1,14 @@
+{
+  "name": "Tic-Tac-Toe",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node game-server.js; node game-robot.js"
+  },
+  "dependencies": {
+    "express": "3.4.7",
+    "jade": "*",
+    "socket.io": "~0.9.16",
+    "socket.io-client": "~0.9.16"
+  }
+}
