@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Tic-Tac-Toe EXTREME!</title>
+        <link rel="stylesheet" href="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.css" />
+        <link rel="stylesheet" href="ttt.css" />
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+        <script src="https://ajax.aspnetcdn.com/ajax/jquery.mobile/1.2.0/jquery.mobile-1.2.0.min.js"></script>
+        <script src="socket.io.min.js"></script>        
+        <script src="ttt.js">
+        </script>
+    </head>
+
+<body> 
+
+<!-- Start of first page: #namepage -->
+<div data-role="page" id="namepage" data-theme="a">
+
+	<div data-role="header" data-position="fixed" data-id="ttt-header">
+		<h1>Tic-Tac-Toe EXTREME!</h1>
+	</div><!-- /header -->
+
+	<div data-role="content">
+    <div id="namepageform">
+      <h2>Enter your name:</h2>
+      <input type="text" name="name" id="nameinput" value="" data-inline="true"/>
+      <div><a href='#' id="gobutton" data-role="button" data-inline="true">Go!</a></div>
+    </div>
+  </div><!-- /content -->
+	
+</div><!-- /namepage -->
+
+
+<!-- Start of second page: #gameselect -->
+<div data-role="page" id="gameselect" data-theme="a">
+
+	<div data-role="header" data-position="fixed" data-id="ttt-header">
+		<h1>Tic-Tac-Toe EXTREME!</h1>
+	</div><!-- /header -->
+
+	<div data-role="content" data-theme="a">
+    <div id="gameselectform">
+      <h2>Waiting players</h2>
+      <div id="waitingplayers"></div>
+      <h2>New game</h2>
+      <div><a href='#' id="newgame" data-role="button" data-inline="true">Start new game</a></div>
+    </div>
+  </div><!-- /content -->
+
+</div><!-- /#gameselect -->
+
+<!-- Start of page: #gameboard -->
+<div data-role="page" id="gameboard" data-theme="a">
+
+  <div data-role="header" data-position="fixed" data-id="ttt-header">
+    <h1>Tic-Tac-Toe EXTREME!</h1>
+  </div>
+
+	<div data-role="content" data-theme="a">	
+  <div class="outer">
+    <div class="wrapper">
+      <!-- Make sure not to have any whitespace around the inline divs!!! -->
+      <div class="row"><div data-cell="1" class="cell odd">&nbsp;</div><div data-cell="2" class="cell even">&nbsp;</div><div data-cell="3" class="cell odd">&nbsp;</div></div>
+      <div class="row"><div data-cell="4" class="cell even">&nbsp;</div><div data-cell="5" class="cell odd">&nbsp;</div><div data-cell="6" class="cell even">&nbsp;</div></div>
+      <div class="row"><div data-cell="7" class="cell odd">&nbsp;</div><div data-cell="8" class="cell even">&nbsp;</div><div data-cell="9" class="cell odd">&nbsp;</div></div>
+      <div id="game-message">&nbsp;</div>
+      <div id="game-players-wrapper"><div id="games-player-1" class="game-player"></div><div id="games-player-2" class="game-player"></div></div>
+      </div>
+    </div>
+  </div>
+  <div id="gameupdate"></div>
+	</div>
+	
+</div>
+
+
+<!-- Start of third page: #popup -->
+
+</body>
+
+</html>

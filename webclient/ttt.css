@@ -1,0 +1,81 @@
+#namepageform, #gameselectform {
+  text-align:center;
+}
+
+#namepageform {
+  margin-top: 3em;
+}
+
+#namepageform button {
+  width:6em;
+}
+
+#namepageform input.ui-input-text {
+  width:15em;
+  display:inline-block;
+  font-size:1.2em;
+}
+
+h2 {
+  margin:0.2em;
+}
+
+/* GAME BOARD */
+
+    @media screen and (min-width: 200px)  {
+      .outer {
+        font-size:50px;
+      }
+    }
+    @media screen and (min-width: 300px)  {
+      .outer {
+        font-size:75px;
+      }
+    }
+    @media screen and (min-width: 400px)  {
+      .outer {
+        font-size:100px;
+      }
+    }
+    @media screen and (min-width: 600px)  {
+      .outer {
+        font-size:150px;
+      }
+    }
+    .wrapper {
+      width: 3.3em;
+      margin: auto;
+    }
+    .row {
+      display: block;
+      height:1.1em;
+    }
+    .cell {
+      display: inline-block;
+      width: 1.1em;
+      text-align: center;
+      height:1.1em;
+    }
+    .even {
+      background-color: #BBB;
+    }
+    .odd {
+      background-color: #999;
+    }
+    #game-message {
+      margin:0.3em 0;
+      padding:0.4em;
+      font-size:0.3em;
+      text-align:center;
+      background-color:#999;
+    }
+    #game-players-wrapper {
+      font-size:0.3em;
+      font-weight:bold;
+    }
+    .game-player {
+      width:50%;
+      text-align:center;      
+      display: inline-block;
+    }
+    
